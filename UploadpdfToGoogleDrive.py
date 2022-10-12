@@ -26,7 +26,6 @@ DEFAULT_SCOPES = [
                              "https://www.googleapis.com/auth/drive.resource",	
                              'https://www.googleapis.com/auth/drive.metadata']
 
-API_KEY='AIzaSyBGpthriSVM5WNiXpc3ewwj-vorpnhoosI'
 
 class UploadPdftoGdrive:
     def __init__(self):
