@@ -20,8 +20,8 @@ class ScrapingManager:
     #for downloading the whole files.
     #function to automatically upload the file to google drive account with a specific path and file name. 
     def save_files_to_gdrive(self,files_path,file_name,gdrive_download_path,gdrive_file_name):
-
-        UploadPdftoGdrive.upload_Pdf_to_Gdrive(files_path)
+        uploading=UploadPdftoGdrive()
+        uploading.upload_Pdf_to_Gdrive(files_path)
         
     def website_scrping(self,urls_csv_file,defualt_download_path,summary_csv_file_name):
         books = pd.read_csv(urls_csv_file,delimiter=',',encoding='utf-8')
